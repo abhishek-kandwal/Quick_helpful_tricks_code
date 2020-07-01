@@ -1,0 +1,20 @@
+To hit different api's from the browser , steps down below:-
+1) hit the url with the post in the url box of the browser :-
+	eg:- http://localhost:8080/
+2) now open console using the cmd:-
+	" ctrl + shift + i "
+3) code to hit the api endpoints:-
+	
+// code starts here 	
+
+	await fetch('/puserdetails',{
+	method: "POST",
+	headers: {'content-type': 'applicaton/json'},
+	body: {
+    		name: "abhishek",
+    		email: "abhishek@gmail.com",
+    		dob: "22-21-2020"
+		}
+	})
+
+// code ends here 
