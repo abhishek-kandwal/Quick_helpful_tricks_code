@@ -7,14 +7,13 @@ To hit different api's from the browser , steps down below:-
 	
 // code starts here 	
 
-	await fetch('/puserdetails',{
+	await fetch('/login',{
 	method: "POST",
 	headers: {'content-type': 'applicaton/json'},
-	body: {
-    		name: "abhishek",
-    		email: "abhishek@gmail.com",
-    		dob: "22-21-2020"
-		}
+	body: JSON.stringify({
+    			name: "abhishtk",
+    			password: "abhishek@afj.com",
+			})
 	})
 
 // code ends here 
